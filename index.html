@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>杜许阳 · 个人网站</title>
+  <!-- TODO(个人): 替换网站描述 -->
+  <meta name="description" content="杜许阳的个人网站 — 记录学习与生活。" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 背景装饰 -->
+  <div class="bg-decor" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- 导航栏 -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="主导航">
+      <a class="brand" href="#home">杜许阳<span class="brand-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link is-active" href="#home">首页</a></li>
+        <li><a class="nav-link" href="#about">关于</a></li>
+        <li><a class="nav-link" href="#interests">兴趣</a></li>
+        <li><a class="nav-link" href="#growth">成长</a></li>
+        <li><a class="nav-link" href="#achievements">成就</a></li>
+        <li><a class="nav-link" href="#travel">旅行</a></li>
+        <li><a class="nav-link" href="#contact">联系</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="#contact">联系我</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== 首页 / Hero ===== -->
+    <section class="hero section" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">你好，我是</p>
+          <h1 class="hero-name">杜许阳</h1>
+          <p class="hero-role">
+            <span id="typeTarget" aria-live="polite"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-desc">
+            一名热爱学习与生活的初中生，认真对待每一件小事，
+            也珍惜身边的每一个人。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about">
+              了解更多
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">联系我</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- TODO(个人): 替换为你的照片/头像 -->
+          <img class="avatar" src="assets/img/avatar.svg" alt="杜许阳的头像占位图" />
+          <div class="float-card float-card-a">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12c-2.5 4.5-9.5 9-9.5 9Z"/>
+            </svg>
+            <span><strong>100%</strong>热爱生活</span>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="向下滚动">
+        <span class="scroll-hint-line"></span>
+        <span class="scroll-hint-text">向下滚动</span>
+      </a>
+    </section>
+
+    <!-- ===== 关于 ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h2>关于我</h2>
+          <p class="section-sub">了解一下我是谁、我在做什么</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              你好，我是 <strong>杜许阳</strong>，一名初中生。
+              我喜欢把平凡的日子过成自己喜欢的样子：认真听课、大胆提问，
+              也用心记录身边的小事。
+            </p>
+            <p>
+              在学校，我曾担任 <strong>学生会纪检部副部长</strong>，
+              积极参加学校组织的活动和比赛。
+            </p>
+            <p>
+              课余时间，我喜欢打羽毛球、玩<a class="inline-link" href="#contact">原神</a>，也喜欢钻研地理、数学、物理和化学。
+              这些爱好让我保持好奇，也让我的生活更加丰富多彩。
+            </p>
+            <p class="about-quote">
+              「每天有 1440 分钟，这表明我们每天有 1440 个创建积极影响的机会。」
+            </p>
+          </div>
+          <aside class="card about-facts reveal">
+            <h3>个人信息</h3>
+            <dl>
+              <div class="fact-row"><dt>姓名</dt><dd>杜许阳</dd></div>
+              <div class="fact-row"><dt>学校</dt><dd>深圳龙华实验</dd></div>
+              <div class="fact-row"><dt>年级</dt><dd>九年级</dd></div>
+              <div class="fact-row"><dt>邮箱</dt><dd>duxuyango@outlook.com</dd></div>
+              <div class="fact-row"><dt>手机</dt><dd>19129450534</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 兴趣与特长 ===== -->
+    <section class="section section-alt" id="interests">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Interests</p>
+          <h2>兴趣与特长</h2>
+          <p class="section-sub">我的爱好与擅长的事情</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/>
+              </svg>
+            </div>
+            <h3>学习与思考</h3>
+            <p>喜欢地理、数学、物理和化学，享受解开难题的乐趣。</p>
+            <ul class="tag-list">
+              <li>地理</li><li>数学</li><li>物理</li><li>化学</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+              </svg>
+            </div>
+            <h3>运动与健康</h3>
+            <p>保持好身体和好心情，热爱户外活动与集体生活。</p>
+            <ul class="tag-list">
+              <li>羽毛球</li><li>篮球</li><li>跑步</li><li>游泳</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/>
+              </svg>
+            </div>
+            <h3>游戏与生活</h3>
+            <p>用心过好每一天，也珍惜身边的朋友与家人。</p>
+            <ul class="tag-list">
+              <li><a class="tag-inner" href="#contact">原神</a></li><li>旅行</li><li>美食</li><li>电影</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 成长足迹 ===== -->
+    <section class="section" id="growth">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Growth</p>
+          <h2>成长足迹</h2>
+          <p class="section-sub">我的学习、活动与收获</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-company">出生</span>
+              <span class="timeline-period">2012 年 5 月 25 日</span>
+            </div>
+            <div class="timeline-body">
+              <h3>一个新生命的开始</h3>
+              <p>2012 年 5 月 25 日，我出生了，带着好奇与期待，开始了我的成长之旅。</p>
+              <ul class="tag-list">
+                <li>家庭</li><li>新起点</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-company">梅龙镇幼儿园</span>
+              <span class="timeline-period">2015 — 2018</span>
+            </div>
+            <div class="timeline-body">
+              <h3>幼儿园时光</h3>
+              <p>第一次背上小书包，学会了分享、交朋友和独立。</p>
+              <ul class="tag-list">
+                <li>启蒙</li><li>朋友</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-company">民顺小学</span>
+              <span class="timeline-period">2018 — 2024</span>
+            </div>
+            <div class="timeline-body">
+              <h3>小学时光</h3>
+              <p>在民顺小学度过了六年时光，收获了知识、友谊和成长。</p>
+              <ul class="tag-list">
+                <li>学习</li><li>友谊</li><li>成长</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-company">龙华实验学校</span>
+              <span class="timeline-period">2024 — 至今</span>
+            </div>
+            <div class="timeline-body">
+              <h3>初中生活</h3>
+              <p>进入龙华实验学校，担任学生会纪检部副部长，开始了新的旅程。</p>
+              <ul class="tag-list">
+                <li>初中</li><li>学生会</li><li>纪检部</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 我的学习成就 ===== -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Achievements</p>
+          <h2>我的学习成就</h2>
+          <p class="section-sub">用努力换来的小小成绩</p>
+        </header>
+
+        <div class="achievements-grid">
+          <article class="card achievement-card reveal">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/>
+              </svg>
+            </div>
+            <h3>地理</h3>
+            <p class="achievement-desc">多次获得学校排名第 1、2 名</p>
+            <span class="achievement-badge">校排名 1、2</span>
+          </article>
+          <article class="card achievement-card reveal">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/>
+              </svg>
+            </div>
+            <h3>物理</h3>
+            <p class="achievement-desc">多次获得 A+ 成绩</p>
+            <span class="achievement-badge">A+</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 旅游足迹 ===== -->
+    <section class="section section-alt" id="travel">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Travel</p>
+          <h2>旅游足迹</h2>
+          <p class="section-sub">我去过的地方，每一站都有故事</p>
+        </header>
+
+        <div class="travel-groups">
+          <article class="card travel-group reveal">
+            <h3>国内</h3>
+            <ul class="tag-list">
+              <li>深圳</li><li>广东</li><li>福建</li><li>湖南</li><li>湖北</li><li>陕西</li><li>新疆</li><li>北京</li><li>天津</li><li>广西</li><li>山东</li><li>江西</li>
+            </ul>
+          </article>
+          <article class="card travel-group reveal">
+            <h3>港澳及海外</h3>
+            <ul class="tag-list">
+              <li>香港</li><li>澳门</li><li>新加坡</li><li>泰国</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 联系 ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>一起聊聊？</h2>
+          <p class="contact-desc">
+            无论是一个有趣的想法、一个合作机会，
+            还是一个想解决的问题——欢迎随时联系我。
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg" href="mailto:duxuyango@outlook.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>
+              </svg>
+              duxuyango@outlook.com
+            </a>
+            <a class="btn btn-ghost btn-lg" href="tel:19129450534">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/>
+              </svg>
+              19129450534
+            </a>
+          </div>
+          <div class="contact-genshin">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="6" width="20" height="12" rx="3"/><path d="M6 12h4"/><path d="M8 10v4"/><path d="M15 13h.01"/><path d="M18 11h.01"/>
+            </svg>
+            <span>原神 UID</span>
+            <strong>338450887</strong>
+          </div>
+          <ul class="socials">
+            <!-- TODO(个人): 替换为你的社交链接 -->
+            <li>
+              <a class="social-link" href="#" aria-label="GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#" aria-label="微信">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="mailto:duxuyango@outlook.com" aria-label="邮箱">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 杜许阳 · 保留所有权利</p>
+      <p class="footer-note">认真生活 · 用心创作</p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="回到顶部">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
